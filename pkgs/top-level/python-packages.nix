@@ -162,6 +162,10 @@ in {
 
   actdiag = callPackage ../development/python-modules/actdiag { };
 
+  adafruit-platformdetect = callPackage ../development/python-modules/adafruit-platformdetect { };
+
+  adafruit-pureio = callPackage ../development/python-modules/adafruit-pureio { };
+
   adal = callPackage ../development/python-modules/adal { };
 
   adb-homeassistant = callPackage ../development/python-modules/adb-homeassistant { };
@@ -205,6 +209,8 @@ in {
   aiocontextvars = callPackage ../development/python-modules/aiocontextvars { };
 
   aiodns = callPackage ../development/python-modules/aiodns { };
+
+  aioeafm = callPackage ../development/python-modules/aioeafm { };
 
   aioesphomeapi = callPackage ../development/python-modules/aioesphomeapi { };
 
@@ -317,6 +323,8 @@ in {
   amazon_kclpy = callPackage ../development/python-modules/amazon_kclpy { };
 
   ambiclimate = callPackage ../development/python-modules/ambiclimate { };
+
+  amcrest = callPackage ../development/python-modules/amcrest { };
 
   amply = callPackage ../development/python-modules/amply { };
 
@@ -548,6 +556,8 @@ in {
   av = callPackage ../development/python-modules/av { inherit (pkgs) pkg-config; };
 
   avea = callPackage ../development/python-modules/avea { };
+
+  avion = callPackage ../development/python-modules/avion { };
 
   avro3k = callPackage ../development/python-modules/avro3k { };
 
@@ -917,6 +927,8 @@ in {
 
   binaryornot = callPackage ../development/python-modules/binaryornot { };
 
+  binho-host-adapter = callPackage ../development/python-modules/binho-host-adapter { };
+
   binwalk = callPackage ../development/python-modules/binwalk {
     pyqtgraph = null;
     matplotlib = null;
@@ -987,6 +999,8 @@ in {
 
   bluepy = callPackage ../development/python-modules/bluepy { };
 
+  bluepy-devices = callPackage ../development/python-modules/bluepy-devices { };
+
   bme680 = callPackage ../development/python-modules/bme680 { };
 
   bokeh = callPackage ../development/python-modules/bokeh { };
@@ -1039,6 +1053,8 @@ in {
   brotli = callPackage ../development/python-modules/brotli { };
 
   brotlipy = callPackage ../development/python-modules/brotlipy { };
+
+  brottsplatskartan = callPackage ../development/python-modules/brottsplatskartan { };
 
   browser-cookie3 = callPackage ../development/python-modules/browser-cookie3 { };
 
@@ -1495,6 +1511,8 @@ in {
 
   crytic-compile = callPackage ../development/python-modules/crytic-compile { };
 
+  csrmesh  = callPackage ../development/python-modules/csrmesh { };
+
   csscompressor = callPackage ../development/python-modules/csscompressor { };
 
   cssmin = callPackage ../development/python-modules/cssmin { };
@@ -1929,6 +1947,8 @@ in {
 
   dogtail = callPackage ../development/python-modules/dogtail { };
 
+  doit = callPackage ../development/python-modules/doit { };
+
   dominate = callPackage ../development/python-modules/dominate { };
 
   dopy = callPackage ../development/python-modules/dopy { };
@@ -1986,6 +2006,8 @@ in {
   easy-thumbnails = callPackage ../development/python-modules/easy-thumbnails { };
 
   easywatch = callPackage ../development/python-modules/easywatch { };
+
+  ec2instanceconnectcli = callPackage ../tools/virtualization/ec2instanceconnectcli { };
 
   eccodes = toPythonModule (pkgs.eccodes.override {
     enablePython = true;
@@ -2184,7 +2206,6 @@ in {
 
   fenics = callPackage ../development/libraries/science/math/fenics {
     inherit (pkgs) pkg-config;
-    mpi = pkgs.openmpi;
     pytest = self.pytest_4;
   };
 
@@ -2379,6 +2400,8 @@ in {
 
   forbiddenfruit = callPackage ../development/python-modules/forbiddenfruit { };
 
+  fortiosapi = callPackage ../development/python-modules/fortiosapi { };
+
   FormEncode = callPackage ../development/python-modules/FormEncode { };
 
   foundationdb51 = callPackage ../servers/foundationdb/python.nix { foundationdb = pkgs.foundationdb51; };
@@ -2498,6 +2521,8 @@ in {
   GeoIP = callPackage ../development/python-modules/GeoIP { };
 
   geojson = callPackage ../development/python-modules/geojson { };
+
+  geojson-client = callPackage ../development/python-modules/geojson-client { };
 
   geopandas = callPackage ../development/python-modules/geopandas { };
 
@@ -2855,6 +2880,8 @@ in {
   hass-nabucasa = callPackage ../development/python-modules/hass-nabucasa { };
 
   hatasmota = callPackage ../development/python-modules/hatasmota { };
+
+  haversine = callPackage ../development/python-modules/haversine { };
 
   hawkauthlib = callPackage ../development/python-modules/hawkauthlib { };
 
@@ -3486,7 +3513,7 @@ in {
 
   labelbox = callPackage ../development/python-modules/labelbox { };
 
-  lammps-cython = callPackage ../development/python-modules/lammps-cython { mpi = pkgs.openmpi; };
+  lammps-cython = callPackage ../development/python-modules/lammps-cython { mpi = pkgs.mpi; };
 
   langcodes = callPackage ../development/python-modules/langcodes { };
 
@@ -4120,7 +4147,7 @@ in {
 
   mpd = callPackage ../development/python-modules/mpd { };
 
-  mpi4py = callPackage ../development/python-modules/mpi4py { mpi = pkgs.openmpi; };
+  mpi4py = callPackage ../development/python-modules/mpi4py { mpi = pkgs.mpi; };
 
   mplleaflet = callPackage ../development/python-modules/mplleaflet { };
 
@@ -4846,6 +4873,8 @@ in {
 
   pkuseg = callPackage ../development/python-modules/pkuseg { };
 
+  pynndescent = callPackage ../development/python-modules/pynndescent { };
+
   pysbd = callPackage ../development/python-modules/pysbd { };
 
   python-codon-tables = callPackage ../development/python-modules/python-codon-tables { };
@@ -5121,6 +5150,8 @@ in {
 
   pyaftership = callPackage ../development/python-modules/pyaftership { };
 
+  pyahocorasick = callPackage ../development/python-modules/pyahocorasick { };
+
   pyairvisual = callPackage ../development/python-modules/pyairvisual { };
 
   pyalgotrade = callPackage ../development/python-modules/pyalgotrade { };
@@ -5204,6 +5235,8 @@ in {
   pycategories = callPackage ../development/python-modules/pycategories { };
 
   pycdio = callPackage ../development/python-modules/pycdio { };
+
+  pycfdns = callPackage ../development/python-modules/pycfdns { };
 
   pychart = callPackage ../development/python-modules/pychart { };
 
@@ -5295,6 +5328,8 @@ in {
   pydy = callPackage ../development/python-modules/pydy { };
 
   pyechonest = callPackage ../development/python-modules/pyechonest { };
+
+  pyedimax = callPackage ../development/python-modules/pyedimax { };
 
   pyee = callPackage ../development/python-modules/pyee { };
 
@@ -5901,8 +5936,6 @@ in {
 
   pyspotify = callPackage ../development/python-modules/pyspotify { };
 
-  pyspread = callPackage ../development/python-modules/pyspread { };
-
   pysptk = callPackage ../development/python-modules/pysptk { };
 
   pysqlcipher3 = callPackage ../development/python-modules/pysqlcipher3 {
@@ -6059,6 +6092,8 @@ in {
   pytest-mypy = callPackage ../development/python-modules/pytest-mypy { };
 
   pytest-openfiles = callPackage ../development/python-modules/pytest-openfiles { };
+
+  pytest-order = callPackage ../development/python-modules/pytest-order { };
 
   pytest-ordering = callPackage ../development/python-modules/pytest-ordering { };
 
@@ -6479,6 +6514,8 @@ in {
       };
     });
   in if isPy3k then pyxattr' else pyxattr_2;
+
+  pyworld = callPackage ../development/python-modules/pyworld { };
 
   pyx = callPackage ../development/python-modules/pyx { };
 
@@ -7102,6 +7139,8 @@ in {
 
   sip = callPackage ../development/python-modules/sip { };
 
+  sip_5 = callPackage ../development/python-modules/sip/5.x.nix { };
+
   sipsimple = callPackage ../development/python-modules/sipsimple { };
 
   six = callPackage ../development/python-modules/six { };
@@ -7589,6 +7628,10 @@ in {
   testfixtures = callPackage ../development/python-modules/testfixtures { };
 
   textfsm = callPackage ../development/python-modules/textfsm { };
+
+  testing-common-database = callPackage ../development/python-modules/testing-common-database { };
+
+  testing-postgresql = callPackage ../development/python-modules/testing-postgresql { };
 
   testpath = callPackage ../development/python-modules/testpath { };
 

@@ -55,8 +55,7 @@ rec {
       };
 
       # Do not remove static from make files as we want a static binary
-      patchPhase = ''
-      '';
+      patchPhase = "";
 
       NIX_CFLAGS_COMPILE = "-DMINIMAL=ON";
     });
@@ -169,7 +168,7 @@ rec {
       substituteInPlace ./scripts/docs/generate-man.sh --replace "-v md2man" "-v go-md2man"
       substituteInPlace ./man/md2man-all.sh            --replace md2man go-md2man
     '' + optionalString buildxSupport ''
-      substituteInPlace ./components/cli/cli-plugins/manager/manager_unix.go --replace /usr/libexec/docker/cli-plugins \
+      substituteInPlace ./cli-plugins/manager/manager_unix.go --replace /usr/libexec/docker/cli-plugins \
           ${lib.strings.makeSearchPathOutput "bin" "libexec/docker/cli-plugins" [docker-buildx]}
     '';
 

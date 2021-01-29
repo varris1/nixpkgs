@@ -1084,6 +1084,12 @@
     githubId = 75972;
     name = "Ben Booth";
   };
+  berberman = {
+    email = "berberman@yandex.com";
+    github = "berberman";
+    githubId = 26041945;
+    name = "Potato Hatsue";
+  };
   berce = {
     email = "bert.moens@gmail.com";
     github = "berce";
@@ -2583,6 +2589,12 @@
     githubId = 119483;
     name = "Matthew Brown";
   };
+  eduardosm = {
+    email = "esm@eduardosm.net";
+    github = "eduardosm";
+    githubId = 761151;
+    name = "Eduardo Sánchez Muñoz";
+  };
   eduarrrd = {
     email = "e.bachmakov@gmail.com";
     github = "eduarrrd";
@@ -3645,6 +3657,12 @@
     githubId = 3656888;
     name = "hhm";
   };
+  higebu = {
+    name = "Yuya Kusakabe";
+    email = "yuya.kusakabe@gmail.com";
+    github = "higebu";
+    githubId = 733288;
+  };
   hinton = {
     email = "t@larkery.com";
     name = "Tom Hinton";
@@ -3693,11 +3711,23 @@
     githubId = 896431;
     name = "Chris Hodapp";
   };
+  holymonson = {
+    email = "holymonson@gmail.com";
+    github = "holymonson";
+    githubId = 902012;
+    name = "Monson Shao";
+  };
   hongchangwu = {
     email = "wuhc85@gmail.com";
     github = "hongchangwu";
     githubId = 362833;
     name = "Hongchang Wu";
+  };
+  hoverbear = {
+    email = "operator+nix@hoverbear.org";
+    github = "hoverbear";
+    githubId = 130903;
+    name = "Ana Hobden";
   };
   hrdinka = {
     email = "c.nix@hrdinka.at";
@@ -4919,6 +4949,12 @@
     githubId = 4032;
     name = "Kristoffer Thømt Ravneberg";
   };
+  kritnich = {
+    email = "kritnich@kritni.ch";
+    github = "Kritnich";
+    githubId = 22116767;
+    name = "Kritnich";
+  };
   kroell = {
     email = "nixosmainter@makroell.de";
     github = "rokk4";
@@ -5599,6 +5635,12 @@
   markWot = {
     email = "markus@wotringer.de";
     name = "Markus Wotringer";
+  };
+  marijanp = {
+    name = "Marijan Petričević";
+    email = "marijan.petricevic94@gmail.com";
+    github = "marijanp";
+    githubId = 13599169;
   };
   marius851000 = {
     email = "mariusdavid@laposte.net";
@@ -6704,6 +6746,12 @@
     github = "nyanloutre";
     githubId = 7677321;
     name = "Paul Trehiou";
+  };
+  nyanotech = {
+    name = "nyanotech";
+    email = "nyanotechnology@gmail.com";
+    github = "nyanotech";
+    githubId = 33802077;
   };
   nyarly = {
     email = "nyarly@gmail.com";
@@ -8603,6 +8651,12 @@
     githubId = 36899624;
     name = "squalus";
   };
+  srapenne = {
+    email = "solene@perso.pw";
+    github = "rapenne-s";
+    githubId = 248016;
+    name = "Solène Rapenne";
+  };
   srghma = {
     email = "srghma@gmail.com";
     github = "srghma";
@@ -10483,5 +10537,11 @@
     email = "nejczupan+nix@gmail.com";
     github = "zupo";
     githubId = 311580;
+  };
+  jbcrail = {
+    name = "Joseph Crail";
+    email = "jbcrail@gmail.com";
+    github = "jbcrail";
+    githubId = 6038;
   };
 }

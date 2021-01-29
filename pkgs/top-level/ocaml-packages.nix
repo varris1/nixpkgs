@@ -58,6 +58,8 @@ let
 
     batteries = callPackage ../development/ocaml-modules/batteries { };
 
+    bheap = callPackage ../development/ocaml-modules/bheap { };
+
     bigarray-compat = callPackage ../development/ocaml-modules/bigarray-compat { };
 
     bigarray-overlap = callPackage ../development/ocaml-modules/bigarray-overlap { };
@@ -146,6 +148,8 @@ let
 
     cohttp-lwt-unix = callPackage ../development/ocaml-modules/cohttp/lwt-unix.nix { };
 
+    cohttp-mirage = callPackage ../development/ocaml-modules/cohttp/mirage.nix { };
+
     conduit = callPackage ../development/ocaml-modules/conduit { };
 
     conduit-async = callPackage ../development/ocaml-modules/conduit/async.nix { };
@@ -153,6 +157,8 @@ let
     conduit-lwt = callPackage ../development/ocaml-modules/conduit/lwt.nix { };
 
     conduit-lwt-unix = callPackage ../development/ocaml-modules/conduit/lwt-unix.nix { };
+
+    conduit-mirage = callPackage ../development/ocaml-modules/conduit/mirage.nix { };
 
     config-file = callPackage ../development/ocaml-modules/config-file { };
 
@@ -276,6 +282,8 @@ let
     easy-format = callPackage ../development/ocaml-modules/easy-format { };
 
     eigen = callPackage ../development/ocaml-modules/eigen { };
+
+    either = callPackage ../development/ocaml-modules/either { };
 
     elina = callPackage ../development/ocaml-modules/elina { };
 
@@ -879,6 +887,8 @@ let
 
     resource-pooling = callPackage ../development/ocaml-modules/resource-pooling { };
 
+    repr = callPackage ../development/ocaml-modules/repr { };
+
     result = callPackage ../development/ocaml-modules/ocaml-result { };
 
     secp256k1 = callPackage ../development/ocaml-modules/secp256k1 {
@@ -902,6 +912,8 @@ let
     ulex = callPackage ../development/ocaml-modules/ulex { };
 
     tls = callPackage ../development/ocaml-modules/tls { };
+
+    tls-mirage = callPackage ../development/ocaml-modules/tls/mirage.nix { };
 
     torch = callPackage ../development/ocaml-modules/torch {
       inherit (pkgs.python3Packages) pytorch;
@@ -960,6 +972,8 @@ let
 
     ppx_irmin = callPackage ../development/ocaml-modules/irmin/ppx.nix {
     };
+
+    ppx_repr = callPackage ../development/ocaml-modules/repr/ppx.nix { };
 
     ppx_tools =
       if lib.versionAtLeast ocaml.version "4.02"
@@ -1036,6 +1050,8 @@ let
 
     tcslib = callPackage ../development/ocaml-modules/tcslib { };
 
+    terminal_size = callPackage ../development/ocaml-modules/terminal_size { };
+
     toml = callPackage ../development/ocaml-modules/toml { };
 
     topkg = callPackage ../development/ocaml-modules/topkg { };
@@ -1071,6 +1087,8 @@ let
 
     variantslib_p4 = callPackage ../development/ocaml-modules/variantslib { };
 
+    vchan = callPackage ../development/ocaml-modules/vchan { };
+
     vg = callPackage ../development/ocaml-modules/vg { };
 
     visitors = callPackage ../development/ocaml-modules/visitors { };
@@ -1090,6 +1108,12 @@ let
     wtf8 = callPackage ../development/ocaml-modules/wtf8 { };
 
     x509 = callPackage ../development/ocaml-modules/x509 { };
+
+    xenstore = callPackage ../development/ocaml-modules/xenstore { };
+
+    xenstore_transport = callPackage ../development/ocaml-modules/xenstore_transport { };
+
+    xenstore-tool = callPackage ../development/ocaml-modules/xenstore-tool { };
 
     xmlm = callPackage ../development/ocaml-modules/xmlm { };
 
